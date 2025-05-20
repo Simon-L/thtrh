@@ -33,9 +33,9 @@ jobs:
 
       - name: Slim LLVM libraries
         env:
-        CMAKE_ARCH: x86_64
+          CMAKE_ARCH: x86_64
         run: |
-          echo "Slimming LLVM universal libs to x86_64"
+          echo "Slimming LLVM universal liPKG_CONFIG_PATHbs to x86_64"
           mkdir -p slim-llvm-libs
           for lib in llvm-universal/release/osx/universal/lib/lib*.a; do
             base=$(basename "$lib")
