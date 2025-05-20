@@ -34,3 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+          export FOO=$(echo -l12 -lPollyISL -labcd)
+
+          cmake -Bbuild -DFOO="${FOO}"
